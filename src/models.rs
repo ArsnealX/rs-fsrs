@@ -84,7 +84,7 @@ impl Default for Parameters {
     }
 }
 
-#[derive(Clone, Debug, Default)]
+#[derive(Clone, Debug, Default, PartialEq)]
 #[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]
 pub struct Card {
     pub due: DateTime<Utc>,
